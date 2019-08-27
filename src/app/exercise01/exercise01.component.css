@@ -3,6 +3,9 @@
     width: 450px;
     height: 450px;
     background: #ddd;
+    margin-top: 42px;
+    position: absolute;
+    left: 400px;
 }
 .info {
     text-align: left;    

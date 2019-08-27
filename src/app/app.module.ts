@@ -11,7 +11,8 @@ import { RouterModule} from '@angular/router';
 import { WrongPathComponent } from './wrong-path/wrong-path.component';
 import { NavChangeExerciseComponent } from './nav-change-exercise/nav-change-exercise.component';
 import { NavHeaderExercise03Component } from './nav-header-exercise03/nav-header-exercise03.component';
-import { HomePageComponent } from './home-page/home-page.component'
+import { HomePageComponent } from './home-page/home-page.component';
+import { Exercise05Component } from './exercise05/exercise05.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +23,8 @@ import { HomePageComponent } from './home-page/home-page.component'
     WrongPathComponent,
     NavChangeExerciseComponent,
     NavHeaderExercise03Component,
-    HomePageComponent
+    HomePageComponent,
+    Exercise05Component
   ],
   imports: [
     BrowserModule,
@@ -33,6 +35,7 @@ import { HomePageComponent } from './home-page/home-page.component'
       { path: 'exercise/2', component: Exercise02Component},
       { path: 'exercise/3', component: Exercise03Component},
       { path: 'exercise/3/cart', component: Exercise03CartComponent},
+      { path: 'exercise/5', component: Exercise05Component},
       { path: '**', component: WrongPathComponent}
     ],  { enableTracing: true })
   ],
