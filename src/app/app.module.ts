@@ -10,7 +10,8 @@ import { Exercise03CartComponent } from './exercise03-cart/exercise03-cart.compo
 import { RouterModule} from '@angular/router';
 import { WrongPathComponent } from './wrong-path/wrong-path.component';
 import { NavChangeExerciseComponent } from './nav-change-exercise/nav-change-exercise.component';
-import { NavHeaderExercise03Component } from './nav-header-exercise03/nav-header-exercise03.component'
+import { NavHeaderExercise03Component } from './nav-header-exercise03/nav-header-exercise03.component';
+import { HomePageComponent } from './home-page/home-page.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,21 +21,14 @@ import { NavHeaderExercise03Component } from './nav-header-exercise03/nav-header
     Exercise03CartComponent,
     WrongPathComponent,
     NavChangeExerciseComponent,
-    NavHeaderExercise03Component
+    NavHeaderExercise03Component,
+    HomePageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot([
-      { path: '', component: Exercise03Component, 
-      children: [
-        {
-            path: '',
-            pathMatch: 'full',
-            redirectTo: '/exercise/3'
-        }
-    ]
-      },
+      { path: '', component: HomePageComponent},
       { path: 'exercise/1', component: Exercise01Component},
       { path: 'exercise/2', component: Exercise02Component},
       { path: 'exercise/3', component: Exercise03Component},
